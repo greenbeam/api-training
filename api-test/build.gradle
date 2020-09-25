@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    restAssuredVersion = '3.3.0'
+    testNgVersion = '6.13'
+}
+dependencies {
+    compile "io.rest-assured:rest-assured:$restAssuredVersion"
+    testCompile "org.testing:testing:$testNgVersion"
+}
